@@ -25,7 +25,7 @@ class MockResponse:
         self.choices = [SimpleNamespace(message=message)]
 
 def demo_fallback_response(messages: list, tools: list = None):
-    # Check if this is a follow-up with tool results
+    # Check if this is a follow-up turn containing tool execution results
     last_msg = messages[-1]
     if last_msg.get("role") == "tool":
         try:
@@ -33,8 +33,8 @@ def demo_fallback_response(messages: list, tools: list = None):
         except Exception:
             tool_data = {}
 
-        # Synthesize professional response from the real FalkorDB tool result
-        if "decided_by" in tool_data:
+        # 1. trace_decision result
+        if isinstance(tool_data, dict) and "decided_by" in tool_data:
             ans = (
                 f"### Architectural Decision: {tool_data.get('title')} (`{tool_data.get('id')}`)\n\n"
                 f"- **Decided By:** {tool_data.get('decided_by')} ({tool_data.get('team')})\n"
@@ -48,7 +48,8 @@ def demo_fallback_response(messages: list, tools: list = None):
                 ans += f"- **[{a.get('id')}]** ({a.get('category')}): {a.get('text')} — *{state}*\n"
             return MockResponse(MockMessage(content=ans))
 
-        elif "total_blast_radius" in tool_data:
+        # 2. find_dependents blast radius result
+        elif isinstance(tool_data, dict) and "total_blast_radius" in tool_data:
             aid = tool_data.get("assumption_id")
             count = tool_data.get("total_blast_radius")
             ans = (
@@ -66,26 +67,57 @@ def demo_fallback_response(messages: list, tools: list = None):
             ans += "\n> [!WARNING]\n> High blast radius detected! Architectural review tickets have been escalated."
             return MockResponse(MockMessage(content=ans))
 
-    # Initial turn: Inspect user question and select appropriate tool
+        # 3. get_critical_decisions result (list of scored decisions)
+        elif isinstance(tool_data, list) and tool_data and "impact_score" in tool_data[0]:
+            ans = "### 🏛️ Most Critical Architectural Decisions in Graph\n\n"
+            ans += "Ranked by centrality impact score (direct dependencies × 2 + assumptions):\n\n"
+            for idx, d in enumerate(tool_data, 1):
+                ans += (
+                    f"{idx}. **{d.get('title')}** (`{d.get('id')}`)\n"
+                    f"   - **Domain:** {d.get('domain')} | **Impact Score:** `{d.get('impact_score')}`\n"
+                    f"   - **Dependent Services:** {d.get('dependent_count')} | **Assumptions:** {d.get('assumption_count')}\n\n"
+                )
+            ans += "> [!NOTE]\n> Changes to these top decisions have the widest ripple effects across the engineering organization."
+            return MockResponse(MockMessage(content=ans))
+
+        # 4. search_decisions result (list of search matches)
+        elif isinstance(tool_data, list) and tool_data:
+            ans = f"### 🔍 Found {len(tool_data)} Matching Decisions in Graph:\n\n"
+            for d in tool_data:
+                owner = d.get('owner') or 'Unassigned'
+                ans += f"- **{d.get('id')}**: *{d.get('title')}* — Domain: `{d.get('domain')}`, Status: `{d.get('status')}` (Lead: {owner})\n"
+            return MockResponse(MockMessage(content=ans))
+
+        # 5. Generic fallback for any other tool output
+        else:
+            return MockResponse(MockMessage(content=f"### Operation Completed\n\nResult from FalkorDB graph:\n```json\n{json.dumps(tool_data, indent=2)}\n```"))
+
+    # Initial turn: Inspect user query and dispatch the right graph tool
     user_query = ""
     for m in messages:
         if m.get("role") == "user":
             user_query = m.get("content", "").lower()
 
-    if "postgres" in user_query or "cache" in user_query:
-        tc = MockToolCall("call_1", "trace_decision", json.dumps({"decision_id": "DEC-POSTGRES-CACHE"}))
+    if "critical" in user_query or "bottleneck" in user_query or "important" in user_query or "central" in user_query:
+        tc = MockToolCall("call_crit", "get_critical_decisions", json.dumps({"limit": 5}))
         return MockResponse(MockMessage(content=None, tool_calls=[tc]))
 
-    elif "stripe" in user_query or "billing" in user_query:
-        tc = MockToolCall("call_2", "trace_decision", json.dumps({"decision_id": "DEC-STRIPE-PRIMARY"}))
+    elif "postgres" in user_query or "cache" in user_query:
+        tc = MockToolCall("call_pg", "trace_decision", json.dumps({"decision_id": "DEC-POSTGRES-CACHE"}))
         return MockResponse(MockMessage(content=None, tool_calls=[tc]))
 
-    elif "asm-latency-q1" in user_query or "blast" in user_query or "break" in user_query:
-        tc = MockToolCall("call_3", "find_dependents", json.dumps({"assumption_id": "ASM-LATENCY-Q1"}))
+    elif "stripe" in user_query or "billing" in user_query or "payment" in user_query:
+        tc = MockToolCall("call_stripe", "trace_decision", json.dumps({"decision_id": "DEC-STRIPE-PRIMARY"}))
+        return MockResponse(MockMessage(content=None, tool_calls=[tc]))
+
+    elif "asm-latency-q1" in user_query or "blast" in user_query or "break" in user_query or "fail" in user_query:
+        tc = MockToolCall("call_blast", "find_dependents", json.dumps({"assumption_id": "ASM-LATENCY-Q1"}))
         return MockResponse(MockMessage(content=None, tool_calls=[tc]))
 
     else:
-        tc = MockToolCall("call_4", "search_decisions", json.dumps({"keyword": user_query[:20].strip()}))
+        # Default to keyword search across the 60+ decisions
+        kw = user_query.replace("what", "").replace("which", "").replace("who", "").replace("decisions", "").replace("in our graph", "").strip()
+        tc = MockToolCall("call_search", "search_decisions", json.dumps({"keyword": kw or "cache"}))
         return MockResponse(MockMessage(content=None, tool_calls=[tc]))
 
 def completion_with_backoff(messages: list, tools: list = None, max_retries: int = 2, temperature: float = 0.2):
