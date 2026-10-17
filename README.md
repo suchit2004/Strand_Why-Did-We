@@ -117,35 +117,6 @@ graph LR
 
 ---
 
-## 🎬 3-Minute Live Demo Pitch
-
-Here is the exact live demonstration flow designed to captivate judges:
-
-### Scene 1: Lineage Tracing (45s)
-1. In the chat, click: **"Why did we switch to Postgres for caching?"**
-2. Watch the **Trace Panel** stream tool execution: `trace_decision(DEC-POSTGRES-CACHE)`.
-3. The graph view reveals the causal chain:
-   $$\text{Decision (Consolidate Caching)} \longrightarrow \text{Source (RFC Q1 Latency)} \longrightarrow \text{Assumption (ASM-LATENCY-Q1: sub-10ms)} \longrightarrow \text{Decided by Alex Rivera}$$
-
-### Scene 2: The Shift & Blast Radius (60s)
-1. Click **"Ingest Demo Note"** (processes `pricing_note.md`).
-2. The note reports that at 12,000 QPS, Postgres latency spiked to 85ms (violating the 10ms SLA).
-3. The **Recorder Agent** immediately:
-   - Sets `Assumption.valid = false` for `ASM-LATENCY-Q1` (diamond turns crimson 🔴 in graph).
-   - Traverses dependents using `find_dependents` to identify affected systems:
-     - `DEC-FEED-SERVICE` (User timeline cache)
-     - `DEC-NOTIF-CACHE` (Auth token invalidation)
-     - `DEC-SEARCH-HINTS` (Autocomplete suggestions)
-   - Automatically drafts P0/P1 review tickets.
-
-### Scene 3: Human-in-the-Loop Triage (45s)
-1. In the bottom-left **Actionable Review Tickets** drawer, view the newly drafted tickets.
-2. Click **"Confirm Ticket"**.
-3. A live Cypher write executes (`Ticket.status = 'confirmed'`).
-4. The ticket node on the graph turns solid green in real time!
-
----
-
 ## 🛡️ Security & Read-Only Cypher Guardrails
 
 To allow agents to execute arbitrary read queries without risking catastrophic data corruption or Cypher injection, the system implements a strict regex-based AST guardrail in `backend/tools/cypher.py`:
