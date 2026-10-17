@@ -1,0 +1,1911 @@
+{
+  "teams": [
+    {
+      "id": "TEAM-CORE",
+      "name": "Core Platform"
+    },
+    {
+      "id": "TEAM-DATA",
+      "name": "Data Infrastructure"
+    },
+    {
+      "id": "TEAM-FIN",
+      "name": "FinOps & Billing"
+    },
+    {
+      "id": "TEAM-SEC",
+      "name": "Security & Identity"
+    }
+  ],
+  "people": [
+    {
+      "id": "PER-ALEX",
+      "name": "Alex Rivera",
+      "role": "Lead Architect",
+      "email": "alex@company.internal",
+      "team_id": "TEAM-CORE"
+    },
+    {
+      "id": "PER-SARAH",
+      "name": "Sarah Chen",
+      "role": "Head of Payments",
+      "email": "sarah@company.internal",
+      "team_id": "TEAM-FIN"
+    },
+    {
+      "id": "PER-DEVON",
+      "name": "Devon Vance",
+      "role": "Principal SRE",
+      "email": "devon@company.internal",
+      "team_id": "TEAM-CORE"
+    },
+    {
+      "id": "PER-PRIYA",
+      "name": "Priya Nair",
+      "role": "Staff Data Engineer",
+      "email": "priya@company.internal",
+      "team_id": "TEAM-DATA"
+    },
+    {
+      "id": "PER-MARCUS",
+      "name": "Marcus Brody",
+      "role": "Security Director",
+      "email": "marcus@company.internal",
+      "team_id": "TEAM-SEC"
+    },
+    {
+      "id": "PER-ELENA",
+      "name": "Elena Rostova",
+      "role": "Backend Lead",
+      "email": "elena@company.internal",
+      "team_id": "TEAM-CORE"
+    },
+    {
+      "id": "PER-LIAM",
+      "name": "Liam O'Connor",
+      "role": "DevOps Engineer",
+      "email": "liam@company.internal",
+      "team_id": "TEAM-CORE"
+    },
+    {
+      "id": "PER-MAYA",
+      "name": "Maya Lin",
+      "role": "Product Manager",
+      "email": "maya@company.internal",
+      "team_id": "TEAM-FIN"
+    },
+    {
+      "id": "PER-KAI",
+      "name": "Kai Tanaka",
+      "role": "Frontend Architect",
+      "email": "kai@company.internal",
+      "team_id": "TEAM-CORE"
+    },
+    {
+      "id": "PER-CHLOE",
+      "name": "Chloe Bennett",
+      "role": "Compliance Officer",
+      "email": "chloe@company.internal",
+      "team_id": "TEAM-SEC"
+    },
+    {
+      "id": "PER-OMAR",
+      "name": "Omar Farooq",
+      "role": "ML Platform Engineer",
+      "email": "omar@company.internal",
+      "team_id": "TEAM-DATA"
+    },
+    {
+      "id": "PER-ZOE",
+      "name": "Zoe Kim",
+      "role": "Senior Backend Dev",
+      "email": "zoe@company.internal",
+      "team_id": "TEAM-CORE"
+    },
+    {
+      "id": "PER-DAVID",
+      "name": "David Ross",
+      "role": "Infrastructure Eng",
+      "email": "david@company.internal",
+      "team_id": "TEAM-DATA"
+    },
+    {
+      "id": "PER-NINA",
+      "name": "Nina Patel",
+      "role": "Billing Engineer",
+      "email": "nina@company.internal",
+      "team_id": "TEAM-FIN"
+    },
+    {
+      "id": "PER-TARIQ",
+      "name": "Tariq Mansoor",
+      "role": "IAM Specialist",
+      "email": "tariq@company.internal",
+      "team_id": "TEAM-SEC"
+    },
+    {
+      "id": "PER-SOPHIA",
+      "name": "Sophia Becker",
+      "role": "Database Admin",
+      "email": "sophia@company.internal",
+      "team_id": "TEAM-DATA"
+    },
+    {
+      "id": "PER-JUCAS",
+      "name": "Lucas Silva",
+      "role": "Staff Platform Eng",
+      "email": "lucas@company.internal",
+      "team_id": "TEAM-CORE"
+    },
+    {
+      "id": "PER-HANNAH",
+      "name": "Hannah Ward",
+      "role": "FinOps Analyst",
+      "email": "hannah@company.internal",
+      "team_id": "TEAM-FIN"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-BENCHMARK-2024",
+      "title": "Q1 2024 Cache Latency & JSONB Benchmark RFC",
+      "type": "RFC Document",
+      "url": "https://wiki.internal/rfc/2024-q1-postgres-cache",
+      "created_at": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "SRC-STRIPE-CONTRACT",
+      "title": "Stripe Custom Enterprise Agreement 2024",
+      "type": "Contract",
+      "url": "https://vault.internal/contracts/stripe-2024-v3.pdf",
+      "created_at": "2024-01-10T08:00:00Z"
+    },
+    {
+      "id": "SRC-GEN-001",
+      "title": "RFC 101: OpenTelemetry Tracing Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/101",
+      "created_at": "2013-07-07T00:56:46"
+    },
+    {
+      "id": "SRC-GEN-002",
+      "title": "RFC 102: GitHub Actions CI Standardization Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/102",
+      "created_at": "2020-06-18T08:06:21"
+    },
+    {
+      "id": "SRC-GEN-003",
+      "title": "RFC 103: Kafka for Event Bus Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/103",
+      "created_at": "1985-03-10T22:23:43"
+    },
+    {
+      "id": "SRC-GEN-004",
+      "title": "RFC 104: Kafka for Event Bus Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/104",
+      "created_at": "1976-12-22T12:45:07"
+    },
+    {
+      "id": "SRC-GEN-005",
+      "title": "RFC 105: OpenTelemetry Tracing Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/105",
+      "created_at": "2007-02-11T03:48:42"
+    },
+    {
+      "id": "SRC-GEN-006",
+      "title": "RFC 106: Branch Previews with Vercel Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/106",
+      "created_at": "1998-09-17T22:10:20"
+    },
+    {
+      "id": "SRC-GEN-007",
+      "title": "RFC 107: Flyway for Database Migrations Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/107",
+      "created_at": "1976-05-17T19:23:25"
+    },
+    {
+      "id": "SRC-GEN-008",
+      "title": "RFC 108: S3 Intelligent Tiering for Logs Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/108",
+      "created_at": "2004-05-22T16:10:16"
+    },
+    {
+      "id": "SRC-GEN-009",
+      "title": "RFC 109: React with Vite & Tailwind Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/109",
+      "created_at": "2008-03-11T19:43:15"
+    },
+    {
+      "id": "SRC-GEN-010",
+      "title": "RFC 110: React with Vite & Tailwind Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/110",
+      "created_at": "2014-03-23T23:09:56"
+    },
+    {
+      "id": "SRC-GEN-011",
+      "title": "RFC 111: Adopt Rust for Image Processing Worker Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/111",
+      "created_at": "1998-07-20T05:19:14"
+    },
+    {
+      "id": "SRC-GEN-012",
+      "title": "RFC 112: Snowflake Data Warehouse Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/112",
+      "created_at": "2010-02-06T06:40:22"
+    },
+    {
+      "id": "SRC-GEN-013",
+      "title": "RFC 113: GitHub Actions CI Standardization Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/113",
+      "created_at": "1970-06-11T12:39:43"
+    },
+    {
+      "id": "SRC-GEN-014",
+      "title": "RFC 114: Single Sign-On with Okta OIDC Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/114",
+      "created_at": "1980-11-12T08:29:22"
+    },
+    {
+      "id": "SRC-GEN-015",
+      "title": "RFC 115: Prometheus Alertmanager PagerDuty Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/115",
+      "created_at": "1993-02-25T23:20:27"
+    },
+    {
+      "id": "SRC-GEN-016",
+      "title": "RFC 116: Kafka for Event Bus Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/116",
+      "created_at": "1984-08-26T15:39:41"
+    },
+    {
+      "id": "SRC-GEN-017",
+      "title": "RFC 117: GraphQL Gateway for Mobile Clients Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/117",
+      "created_at": "1976-12-15T10:48:22"
+    },
+    {
+      "id": "SRC-GEN-018",
+      "title": "RFC 118: mTLS Between Microservices Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/118",
+      "created_at": "1976-07-31T21:34:03"
+    },
+    {
+      "id": "SRC-GEN-019",
+      "title": "RFC 119: Datadog APM Deprecation Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/119",
+      "created_at": "2011-01-31T16:36:17"
+    },
+    {
+      "id": "SRC-GEN-020",
+      "title": "RFC 120: Snowflake Data Warehouse Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/120",
+      "created_at": "1972-12-15T23:11:45"
+    },
+    {
+      "id": "SRC-GEN-021",
+      "title": "RFC 121: ArgoCD GitOps Deployment Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/121",
+      "created_at": "2006-06-29T00:30:58"
+    },
+    {
+      "id": "SRC-GEN-022",
+      "title": "RFC 122: Single Sign-On with Okta OIDC Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/122",
+      "created_at": "1975-05-13T14:08:52"
+    },
+    {
+      "id": "SRC-GEN-023",
+      "title": "RFC 123: ClickHouse for Product Analytics Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/123",
+      "created_at": "2026-06-10T23:09:13"
+    },
+    {
+      "id": "SRC-GEN-024",
+      "title": "RFC 124: Flyway for Database Migrations Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/124",
+      "created_at": "1994-08-11T11:41:44"
+    },
+    {
+      "id": "SRC-GEN-025",
+      "title": "RFC 125: ArgoCD GitOps Deployment Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/125",
+      "created_at": "2017-12-12T05:28:24"
+    },
+    {
+      "id": "SRC-GEN-026",
+      "title": "RFC 126: Adopt gRPC for Internal Services Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/126",
+      "created_at": "2014-12-31T18:56:12"
+    },
+    {
+      "id": "SRC-GEN-027",
+      "title": "RFC 127: GitHub Actions CI Standardization Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/127",
+      "created_at": "1989-09-10T18:38:30"
+    },
+    {
+      "id": "SRC-GEN-028",
+      "title": "RFC 128: ClickHouse for Product Analytics Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/128",
+      "created_at": "1976-11-15T09:42:00"
+    },
+    {
+      "id": "SRC-GEN-029",
+      "title": "RFC 129: Kubernetes EKS Migration Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/129",
+      "created_at": "2000-11-08T13:46:49"
+    },
+    {
+      "id": "SRC-GEN-030",
+      "title": "RFC 130: Single Sign-On with Okta OIDC Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/130",
+      "created_at": "1994-10-29T22:52:16"
+    },
+    {
+      "id": "SRC-GEN-031",
+      "title": "RFC 131: GitHub Actions CI Standardization Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/131",
+      "created_at": "1994-03-06T07:13:45"
+    },
+    {
+      "id": "SRC-GEN-032",
+      "title": "RFC 132: Tailscale Mesh VPN for Staging Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/132",
+      "created_at": "1988-03-02T18:28:18"
+    },
+    {
+      "id": "SRC-GEN-033",
+      "title": "RFC 133: Kafka for Event Bus Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/133",
+      "created_at": "2014-02-06T00:09:57"
+    },
+    {
+      "id": "SRC-GEN-034",
+      "title": "RFC 134: GitHub Actions CI Standardization Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/134",
+      "created_at": "2013-03-18T11:18:09"
+    },
+    {
+      "id": "SRC-GEN-035",
+      "title": "RFC 135: Adopt Rust for Image Processing Worker Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/135",
+      "created_at": "2019-08-14T13:04:42"
+    },
+    {
+      "id": "SRC-GEN-036",
+      "title": "RFC 136: Adopt gRPC for Internal Services Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/136",
+      "created_at": "2001-06-16T12:57:29"
+    },
+    {
+      "id": "SRC-GEN-037",
+      "title": "RFC 137: ArgoCD GitOps Deployment Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/137",
+      "created_at": "2013-07-21T06:43:32"
+    },
+    {
+      "id": "SRC-GEN-038",
+      "title": "RFC 138: mTLS Between Microservices Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/138",
+      "created_at": "1984-12-11T13:33:07"
+    },
+    {
+      "id": "SRC-GEN-039",
+      "title": "RFC 139: Single Sign-On with Okta OIDC Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/139",
+      "created_at": "2022-04-14T12:53:58"
+    },
+    {
+      "id": "SRC-GEN-040",
+      "title": "RFC 140: OpenTelemetry Tracing Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/140",
+      "created_at": "1985-08-03T00:29:48"
+    },
+    {
+      "id": "SRC-GEN-041",
+      "title": "RFC 141: S3 Intelligent Tiering for Logs Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/141",
+      "created_at": "2024-10-13T12:31:35"
+    },
+    {
+      "id": "SRC-GEN-042",
+      "title": "RFC 142: mTLS Between Microservices Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/142",
+      "created_at": "1988-03-21T17:39:27"
+    },
+    {
+      "id": "SRC-GEN-043",
+      "title": "RFC 143: React with Vite & Tailwind Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/143",
+      "created_at": "2008-08-06T08:04:47"
+    },
+    {
+      "id": "SRC-GEN-044",
+      "title": "RFC 144: Adopt Rust for Image Processing Worker Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/144",
+      "created_at": "1984-06-20T20:40:23"
+    },
+    {
+      "id": "SRC-GEN-045",
+      "title": "RFC 145: Kubernetes EKS Migration Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/145",
+      "created_at": "1996-12-03T11:37:12"
+    },
+    {
+      "id": "SRC-GEN-046",
+      "title": "RFC 146: React with Vite & Tailwind Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/146",
+      "created_at": "1979-09-22T02:13:21"
+    },
+    {
+      "id": "SRC-GEN-047",
+      "title": "RFC 147: Single Sign-On with Okta OIDC Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/147",
+      "created_at": "1986-10-13T23:02:20"
+    },
+    {
+      "id": "SRC-GEN-048",
+      "title": "RFC 148: GraphQL Gateway for Mobile Clients Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/148",
+      "created_at": "2006-09-05T08:28:36"
+    },
+    {
+      "id": "SRC-GEN-049",
+      "title": "RFC 149: OpenTelemetry Tracing Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/149",
+      "created_at": "2009-10-12T23:07:40"
+    },
+    {
+      "id": "SRC-GEN-050",
+      "title": "RFC 150: S3 Intelligent Tiering for Logs Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/150",
+      "created_at": "1997-03-07T03:40:59"
+    },
+    {
+      "id": "SRC-GEN-051",
+      "title": "RFC 151: Prometheus Alertmanager PagerDuty Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/151",
+      "created_at": "1979-06-01T06:05:54"
+    },
+    {
+      "id": "SRC-GEN-052",
+      "title": "RFC 152: S3 Intelligent Tiering for Logs Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/152",
+      "created_at": "1976-03-09T13:34:36"
+    },
+    {
+      "id": "SRC-GEN-053",
+      "title": "RFC 153: S3 Intelligent Tiering for Logs Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/153",
+      "created_at": "1977-06-18T08:15:22"
+    },
+    {
+      "id": "SRC-GEN-054",
+      "title": "RFC 154: React with Vite & Tailwind Architecture Spec",
+      "type": "Architecture RFC",
+      "url": "https://wiki.internal/rfc/154",
+      "created_at": "1980-11-20T08:58:40"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-LATENCY-Q1",
+      "text": "Postgres JSONB latency remains sub-10ms for 95% of reads under 5k QPS with unlogged tables",
+      "valid": true,
+      "category": "Performance",
+      "validated_at": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "ASM-REDIS-COST",
+      "text": "Eliminating dedicated Redis cluster saves $8,400 monthly in cloud infrastructure overhead",
+      "valid": true,
+      "category": "Cost",
+      "validated_at": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "ASM-STRIPE-FEE",
+      "text": "European Interchange++ fee fixed under 1.4% with cross-border waiver through 2026",
+      "valid": true,
+      "category": "Billing",
+      "validated_at": "2024-01-10T08:00:00Z"
+    },
+    {
+      "id": "ASM-GEN-001",
+      "text": "Assumption: OpenTelemetry Tracing satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1977-07-30T03:34:23"
+    },
+    {
+      "id": "ASM-GEN-002",
+      "text": "Assumption: GitHub Actions CI Standardization satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1988-09-18T21:22:51"
+    },
+    {
+      "id": "ASM-GEN-003",
+      "text": "Assumption: Kafka for Event Bus satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1979-07-01T05:36:52"
+    },
+    {
+      "id": "ASM-GEN-004",
+      "text": "Assumption: Kafka for Event Bus satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2016-01-19T10:57:58"
+    },
+    {
+      "id": "ASM-GEN-005",
+      "text": "Assumption: OpenTelemetry Tracing satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1975-12-01T21:01:53"
+    },
+    {
+      "id": "ASM-GEN-006",
+      "text": "Assumption: Branch Previews with Vercel satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1972-02-29T23:06:33"
+    },
+    {
+      "id": "ASM-GEN-007",
+      "text": "Assumption: Flyway for Database Migrations satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1984-11-17T06:37:57"
+    },
+    {
+      "id": "ASM-GEN-008",
+      "text": "Assumption: S3 Intelligent Tiering for Logs satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2010-12-20T06:09:38"
+    },
+    {
+      "id": "ASM-GEN-009",
+      "text": "Assumption: React with Vite & Tailwind satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1983-07-14T03:16:36"
+    },
+    {
+      "id": "ASM-GEN-010",
+      "text": "Assumption: React with Vite & Tailwind satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2017-09-22T12:38:30"
+    },
+    {
+      "id": "ASM-GEN-011",
+      "text": "Assumption: Adopt Rust for Image Processing Worker satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1985-01-01T01:57:04"
+    },
+    {
+      "id": "ASM-GEN-012",
+      "text": "Assumption: Snowflake Data Warehouse satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1988-12-06T11:13:12"
+    },
+    {
+      "id": "ASM-GEN-013",
+      "text": "Assumption: GitHub Actions CI Standardization satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2021-08-21T06:13:25"
+    },
+    {
+      "id": "ASM-GEN-014",
+      "text": "Assumption: Single Sign-On with Okta OIDC satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2017-07-05T08:22:21"
+    },
+    {
+      "id": "ASM-GEN-015",
+      "text": "Assumption: Prometheus Alertmanager PagerDuty satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1988-11-28T12:42:44"
+    },
+    {
+      "id": "ASM-GEN-016",
+      "text": "Assumption: Kafka for Event Bus satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2021-12-15T17:59:19"
+    },
+    {
+      "id": "ASM-GEN-017",
+      "text": "Assumption: GraphQL Gateway for Mobile Clients satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1976-04-24T05:03:04"
+    },
+    {
+      "id": "ASM-GEN-018",
+      "text": "Assumption: mTLS Between Microservices satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1994-06-06T11:32:23"
+    },
+    {
+      "id": "ASM-GEN-019",
+      "text": "Assumption: Datadog APM Deprecation satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1988-01-01T16:50:27"
+    },
+    {
+      "id": "ASM-GEN-020",
+      "text": "Assumption: Snowflake Data Warehouse satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2019-08-29T13:58:00"
+    },
+    {
+      "id": "ASM-GEN-021",
+      "text": "Assumption: ArgoCD GitOps Deployment satisfies team SLA with less than 5% maintenance overhead",
+      "valid": false,
+      "category": "Engineering SLA",
+      "validated_at": "1978-06-30T13:42:20"
+    },
+    {
+      "id": "ASM-GEN-022",
+      "text": "Assumption: Single Sign-On with Okta OIDC satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2007-07-27T01:03:52"
+    },
+    {
+      "id": "ASM-GEN-023",
+      "text": "Assumption: ClickHouse for Product Analytics satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2012-10-11T22:14:47"
+    },
+    {
+      "id": "ASM-GEN-024",
+      "text": "Assumption: Flyway for Database Migrations satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2009-04-16T03:58:23"
+    },
+    {
+      "id": "ASM-GEN-025",
+      "text": "Assumption: ArgoCD GitOps Deployment satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1974-09-25T19:15:53"
+    },
+    {
+      "id": "ASM-GEN-026",
+      "text": "Assumption: Adopt gRPC for Internal Services satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1985-07-05T10:36:55"
+    },
+    {
+      "id": "ASM-GEN-027",
+      "text": "Assumption: GitHub Actions CI Standardization satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1975-06-07T05:46:00"
+    },
+    {
+      "id": "ASM-GEN-028",
+      "text": "Assumption: ClickHouse for Product Analytics satisfies team SLA with less than 5% maintenance overhead",
+      "valid": false,
+      "category": "Engineering SLA",
+      "validated_at": "1995-11-14T02:07:39"
+    },
+    {
+      "id": "ASM-GEN-029",
+      "text": "Assumption: Kubernetes EKS Migration satisfies team SLA with less than 5% maintenance overhead",
+      "valid": false,
+      "category": "Engineering SLA",
+      "validated_at": "2013-04-05T00:32:23"
+    },
+    {
+      "id": "ASM-GEN-030",
+      "text": "Assumption: Single Sign-On with Okta OIDC satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1981-01-25T18:56:52"
+    },
+    {
+      "id": "ASM-GEN-031",
+      "text": "Assumption: GitHub Actions CI Standardization satisfies team SLA with less than 5% maintenance overhead",
+      "valid": false,
+      "category": "Engineering SLA",
+      "validated_at": "1984-04-04T07:48:39"
+    },
+    {
+      "id": "ASM-GEN-032",
+      "text": "Assumption: Tailscale Mesh VPN for Staging satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2017-10-04T20:07:27"
+    },
+    {
+      "id": "ASM-GEN-033",
+      "text": "Assumption: Kafka for Event Bus satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1974-11-10T17:15:23"
+    },
+    {
+      "id": "ASM-GEN-034",
+      "text": "Assumption: GitHub Actions CI Standardization satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1981-08-24T16:10:40"
+    },
+    {
+      "id": "ASM-GEN-035",
+      "text": "Assumption: Adopt Rust for Image Processing Worker satisfies team SLA with less than 5% maintenance overhead",
+      "valid": false,
+      "category": "Engineering SLA",
+      "validated_at": "1986-08-29T19:24:21"
+    },
+    {
+      "id": "ASM-GEN-036",
+      "text": "Assumption: Adopt gRPC for Internal Services satisfies team SLA with less than 5% maintenance overhead",
+      "valid": false,
+      "category": "Engineering SLA",
+      "validated_at": "1995-10-28T09:59:23"
+    },
+    {
+      "id": "ASM-GEN-037",
+      "text": "Assumption: ArgoCD GitOps Deployment satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2016-10-30T08:35:46"
+    },
+    {
+      "id": "ASM-GEN-038",
+      "text": "Assumption: mTLS Between Microservices satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2016-08-03T04:18:31"
+    },
+    {
+      "id": "ASM-GEN-039",
+      "text": "Assumption: Single Sign-On with Okta OIDC satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2022-10-22T13:58:52"
+    },
+    {
+      "id": "ASM-GEN-040",
+      "text": "Assumption: OpenTelemetry Tracing satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2025-12-04T00:20:37"
+    },
+    {
+      "id": "ASM-GEN-041",
+      "text": "Assumption: S3 Intelligent Tiering for Logs satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1991-06-20T15:04:30"
+    },
+    {
+      "id": "ASM-GEN-042",
+      "text": "Assumption: mTLS Between Microservices satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1974-07-04T03:02:24"
+    },
+    {
+      "id": "ASM-GEN-043",
+      "text": "Assumption: React with Vite & Tailwind satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2018-11-08T20:32:39"
+    },
+    {
+      "id": "ASM-GEN-044",
+      "text": "Assumption: Adopt Rust for Image Processing Worker satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2014-08-09T00:23:38"
+    },
+    {
+      "id": "ASM-GEN-045",
+      "text": "Assumption: Kubernetes EKS Migration satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2013-09-30T04:04:41"
+    },
+    {
+      "id": "ASM-GEN-046",
+      "text": "Assumption: React with Vite & Tailwind satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1988-01-10T15:10:39"
+    },
+    {
+      "id": "ASM-GEN-047",
+      "text": "Assumption: Single Sign-On with Okta OIDC satisfies team SLA with less than 5% maintenance overhead",
+      "valid": false,
+      "category": "Engineering SLA",
+      "validated_at": "2020-09-11T19:14:20"
+    },
+    {
+      "id": "ASM-GEN-048",
+      "text": "Assumption: GraphQL Gateway for Mobile Clients satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1987-11-18T11:28:30"
+    },
+    {
+      "id": "ASM-GEN-049",
+      "text": "Assumption: OpenTelemetry Tracing satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1999-02-26T18:43:47"
+    },
+    {
+      "id": "ASM-GEN-050",
+      "text": "Assumption: S3 Intelligent Tiering for Logs satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1994-08-20T11:17:31"
+    },
+    {
+      "id": "ASM-GEN-051",
+      "text": "Assumption: Prometheus Alertmanager PagerDuty satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2004-09-03T08:16:20"
+    },
+    {
+      "id": "ASM-GEN-052",
+      "text": "Assumption: S3 Intelligent Tiering for Logs satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2021-06-07T01:37:09"
+    },
+    {
+      "id": "ASM-GEN-053",
+      "text": "Assumption: S3 Intelligent Tiering for Logs satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "1980-05-26T21:23:59"
+    },
+    {
+      "id": "ASM-GEN-054",
+      "text": "Assumption: React with Vite & Tailwind satisfies team SLA with less than 5% maintenance overhead",
+      "valid": true,
+      "category": "Engineering SLA",
+      "validated_at": "2023-11-26T05:44:38"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-POSTGRES-CACHE",
+      "title": "Consolidate App Caching into PostgreSQL Unlogged Tables",
+      "rationale": "Avoid operational overhead of running multi-region Redis cluster given Postgres meets latency SLAs",
+      "status": "active",
+      "decided_at": "2024-01-20T14:30:00Z",
+      "domain": "Database",
+      "confidence": 0.92,
+      "person_id": "PER-ALEX",
+      "source_id": "SRC-BENCHMARK-2024",
+      "relies_on": [
+        "ASM-LATENCY-Q1",
+        "ASM-REDIS-COST"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-FEED-SERVICE",
+      "title": "Feed Service reads user timeline cache from PostgreSQL",
+      "rationale": "High-throughput timeline cache leverages unified PostgreSQL connection pool",
+      "status": "active",
+      "decided_at": "2024-02-01T09:15:00Z",
+      "domain": "Architecture",
+      "confidence": 0.88,
+      "person_id": "PER-ELENA",
+      "source_id": "SRC-BENCHMARK-2024",
+      "relies_on": [
+        "ASM-LATENCY-Q1"
+      ],
+      "depends_on": [
+        "DEC-POSTGRES-CACHE"
+      ]
+    },
+    {
+      "id": "DEC-NOTIF-CACHE",
+      "title": "Notification Service token invalidation lookup via Postgres unlogged cache",
+      "rationale": "Ensures instant auth token revocation check within main DB network boundary",
+      "status": "active",
+      "decided_at": "2024-02-10T11:00:00Z",
+      "domain": "Security",
+      "confidence": 0.85,
+      "person_id": "PER-MARCUS",
+      "source_id": "SRC-BENCHMARK-2024",
+      "relies_on": [
+        "ASM-LATENCY-Q1"
+      ],
+      "depends_on": [
+        "DEC-POSTGRES-CACHE"
+      ]
+    },
+    {
+      "id": "DEC-SEARCH-HINTS",
+      "title": "Search Autocomplete Service stores query hints in Postgres cache",
+      "rationale": "Shared cached query suggestions without extra Redis memory footprint",
+      "status": "active",
+      "decided_at": "2024-02-25T16:20:00Z",
+      "domain": "API",
+      "confidence": 0.81,
+      "person_id": "PER-ZOE",
+      "source_id": "SRC-BENCHMARK-2024",
+      "relies_on": [
+        "ASM-LATENCY-Q1"
+      ],
+      "depends_on": [
+        "DEC-POSTGRES-CACHE"
+      ]
+    },
+    {
+      "id": "DEC-STRIPE-PRIMARY",
+      "title": "Migrate Global Subscription Billing to Stripe Elements & Custom Payouts",
+      "rationale": "Single gateway simplifies accounting and offers favorable negotiated EU processing rates",
+      "status": "active",
+      "decided_at": "2024-01-18T10:00:00Z",
+      "domain": "Billing",
+      "confidence": 0.95,
+      "person_id": "PER-SARAH",
+      "source_id": "SRC-STRIPE-CONTRACT",
+      "relies_on": [
+        "ASM-STRIPE-FEE"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-EU-BILLING",
+      "title": "Zero-Surcharge Euro Pricing for European B2B Customers",
+      "rationale": "Interchange waiver allows passing direct 0% conversion margin to European customers",
+      "status": "active",
+      "decided_at": "2024-02-12T13:40:00Z",
+      "domain": "Billing",
+      "confidence": 0.9,
+      "person_id": "PER-MAYA",
+      "source_id": "SRC-STRIPE-CONTRACT",
+      "relies_on": [
+        "ASM-STRIPE-FEE"
+      ],
+      "depends_on": [
+        "DEC-STRIPE-PRIMARY"
+      ]
+    },
+    {
+      "id": "DEC-MICRO-SUBSCRIPTION",
+      "title": "Launch \u20ac3.99/mo Developer Starter Tier without minimum transaction fees",
+      "rationale": "Unit economics hold only if processing fee stays strictly under 1.5%",
+      "status": "active",
+      "decided_at": "2024-03-05T15:10:00Z",
+      "domain": "Billing",
+      "confidence": 0.86,
+      "person_id": "PER-NINA",
+      "source_id": "SRC-STRIPE-CONTRACT",
+      "relies_on": [
+        "ASM-STRIPE-FEE"
+      ],
+      "depends_on": [
+        "DEC-STRIPE-PRIMARY"
+      ]
+    },
+    {
+      "id": "DEC-GEN-001",
+      "title": "OpenTelemetry Tracing (Phase 1)",
+      "rationale": "Distributed trace collection across all HTTP & gRPC gateways",
+      "status": "active",
+      "decided_at": "1971-09-14T15:29:44",
+      "domain": "Architecture",
+      "confidence": 0.91,
+      "person_id": "PER-ALEX",
+      "source_id": "SRC-GEN-001",
+      "relies_on": [
+        "ASM-GEN-001"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-002",
+      "title": "GitHub Actions CI Standardization (Phase 1)",
+      "rationale": "Migrate all legacy Jenkins pipelines to GHA reusable workflows",
+      "status": "active",
+      "decided_at": "1986-08-31T19:40:56",
+      "domain": "Infrastructure",
+      "confidence": 0.87,
+      "person_id": "PER-DEVON",
+      "source_id": "SRC-GEN-002",
+      "relies_on": [
+        "ASM-GEN-002"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-003",
+      "title": "Kafka for Event Bus (Phase 2)",
+      "rationale": "High throughput event stream for async services",
+      "status": "active",
+      "decided_at": "2020-02-13T02:11:32",
+      "domain": "Infrastructure",
+      "confidence": 0.89,
+      "person_id": "PER-HANNAH",
+      "source_id": "SRC-GEN-003",
+      "relies_on": [
+        "ASM-GEN-003"
+      ],
+      "depends_on": [
+        "DEC-GEN-002"
+      ]
+    },
+    {
+      "id": "DEC-GEN-004",
+      "title": "Kafka for Event Bus (Phase 1)",
+      "rationale": "High throughput event stream for async services",
+      "status": "active",
+      "decided_at": "2020-05-27T09:31:05",
+      "domain": "Infrastructure",
+      "confidence": 0.93,
+      "person_id": "PER-ELENA",
+      "source_id": "SRC-GEN-004",
+      "relies_on": [
+        "ASM-GEN-004"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-005",
+      "title": "OpenTelemetry Tracing (Phase 2)",
+      "rationale": "Distributed trace collection across all HTTP & gRPC gateways",
+      "status": "active",
+      "decided_at": "2010-03-08T18:30:12",
+      "domain": "Architecture",
+      "confidence": 0.94,
+      "person_id": "PER-DEVON",
+      "source_id": "SRC-GEN-005",
+      "relies_on": [
+        "ASM-GEN-005"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-006",
+      "title": "Branch Previews with Vercel (Phase 3)",
+      "rationale": "Ephemeral PR preview environments for designer review",
+      "status": "active",
+      "decided_at": "1972-01-11T14:44:07",
+      "domain": "Frontend",
+      "confidence": 0.89,
+      "person_id": "PER-HANNAH",
+      "source_id": "SRC-GEN-006",
+      "relies_on": [
+        "ASM-GEN-006"
+      ],
+      "depends_on": [
+        "DEC-FEED-SERVICE"
+      ]
+    },
+    {
+      "id": "DEC-GEN-007",
+      "title": "Flyway for Database Migrations (Phase 1)",
+      "rationale": "Deterministic schema migration applied at pod startup",
+      "status": "active",
+      "decided_at": "1985-10-31T19:37:48",
+      "domain": "Database",
+      "confidence": 0.98,
+      "person_id": "PER-LIAM",
+      "source_id": "SRC-GEN-007",
+      "relies_on": [
+        "ASM-GEN-007"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-008",
+      "title": "S3 Intelligent Tiering for Logs (Phase 2)",
+      "rationale": "Auto-transition raw logs older than 30 days to Glacier",
+      "status": "active",
+      "decided_at": "1971-10-22T13:19:21",
+      "domain": "Cost",
+      "confidence": 0.83,
+      "person_id": "PER-PRIYA",
+      "source_id": "SRC-GEN-008",
+      "relies_on": [
+        "ASM-GEN-008"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-009",
+      "title": "React with Vite & Tailwind (Phase 3)",
+      "rationale": "Standardize developer frontend tooling and fast HMR",
+      "status": "active",
+      "decided_at": "2018-09-22T18:20:08",
+      "domain": "Frontend",
+      "confidence": 0.86,
+      "person_id": "PER-DEVON",
+      "source_id": "SRC-GEN-009",
+      "relies_on": [
+        "ASM-GEN-009"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-010",
+      "title": "React with Vite & Tailwind (Phase 1)",
+      "rationale": "Standardize developer frontend tooling and fast HMR",
+      "status": "active",
+      "decided_at": "2007-01-31T14:15:23",
+      "domain": "Frontend",
+      "confidence": 0.76,
+      "person_id": "PER-HANNAH",
+      "source_id": "SRC-GEN-010",
+      "relies_on": [
+        "ASM-GEN-010"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-011",
+      "title": "Adopt Rust for Image Processing Worker (Phase 3)",
+      "rationale": "Eliminate garbage collection pauses during media transcode",
+      "status": "active",
+      "decided_at": "2000-07-27T03:37:57",
+      "domain": "Architecture",
+      "confidence": 0.82,
+      "person_id": "PER-DAVID",
+      "source_id": "SRC-GEN-011",
+      "relies_on": [
+        "ASM-GEN-011"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-012",
+      "title": "Snowflake Data Warehouse (Phase 2)",
+      "rationale": "Central analytical warehouse for executive reporting",
+      "status": "superseded",
+      "decided_at": "2025-01-30T12:04:21",
+      "domain": "Analytics",
+      "confidence": 0.92,
+      "person_id": "PER-DAVID",
+      "source_id": "SRC-GEN-012",
+      "relies_on": [
+        "ASM-GEN-012"
+      ],
+      "depends_on": [
+        "DEC-STRIPE-PRIMARY"
+      ]
+    },
+    {
+      "id": "DEC-GEN-013",
+      "title": "GitHub Actions CI Standardization (Phase 3)",
+      "rationale": "Migrate all legacy Jenkins pipelines to GHA reusable workflows",
+      "status": "active",
+      "decided_at": "2024-11-01T17:54:38",
+      "domain": "Infrastructure",
+      "confidence": 0.8,
+      "person_id": "PER-KAI",
+      "source_id": "SRC-GEN-013",
+      "relies_on": [
+        "ASM-GEN-013"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-014",
+      "title": "Single Sign-On with Okta OIDC (Phase 1)",
+      "rationale": "Centralize corporate identity and MFA policies",
+      "status": "active",
+      "decided_at": "1998-10-05T03:18:32",
+      "domain": "Security",
+      "confidence": 0.93,
+      "person_id": "PER-JUCAS",
+      "source_id": "SRC-GEN-014",
+      "relies_on": [
+        "ASM-GEN-014"
+      ],
+      "depends_on": [
+        "DEC-SEARCH-HINTS"
+      ]
+    },
+    {
+      "id": "DEC-GEN-015",
+      "title": "Prometheus Alertmanager PagerDuty (Phase 2)",
+      "rationale": "Route critical tier-1 outages directly to on-call phone",
+      "status": "active",
+      "decided_at": "1980-07-31T11:08:08",
+      "domain": "Infrastructure",
+      "confidence": 0.97,
+      "person_id": "PER-DEVON",
+      "source_id": "SRC-GEN-015",
+      "relies_on": [
+        "ASM-GEN-015"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-016",
+      "title": "Kafka for Event Bus (Phase 2)",
+      "rationale": "High throughput event stream for async services",
+      "status": "active",
+      "decided_at": "1992-11-27T02:28:12",
+      "domain": "Infrastructure",
+      "confidence": 0.83,
+      "person_id": "PER-PRIYA",
+      "source_id": "SRC-GEN-016",
+      "relies_on": [
+        "ASM-GEN-016"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-017",
+      "title": "GraphQL Gateway for Mobile Clients (Phase 3)",
+      "rationale": "Minimize over-fetching on high latency mobile networks",
+      "status": "active",
+      "decided_at": "1995-11-09T03:27:58",
+      "domain": "Frontend",
+      "confidence": 0.81,
+      "person_id": "PER-NINA",
+      "source_id": "SRC-GEN-017",
+      "relies_on": [
+        "ASM-GEN-017"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-018",
+      "title": "mTLS Between Microservices (Phase 3)",
+      "rationale": "Mutual TLS enforced by Linkerd service mesh",
+      "status": "active",
+      "decided_at": "1993-05-29T01:34:48",
+      "domain": "Security",
+      "confidence": 0.9,
+      "person_id": "PER-ELENA",
+      "source_id": "SRC-GEN-018",
+      "relies_on": [
+        "ASM-GEN-018"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-019",
+      "title": "Datadog APM Deprecation (Phase 3)",
+      "rationale": "Shift to self-hosted Grafana Tempo to curb APM cost overrun",
+      "status": "active",
+      "decided_at": "2024-12-04T06:46:23",
+      "domain": "Cost",
+      "confidence": 0.89,
+      "person_id": "PER-LIAM",
+      "source_id": "SRC-GEN-019",
+      "relies_on": [
+        "ASM-GEN-019"
+      ],
+      "depends_on": [
+        "DEC-GEN-011"
+      ]
+    },
+    {
+      "id": "DEC-GEN-020",
+      "title": "Snowflake Data Warehouse (Phase 2)",
+      "rationale": "Central analytical warehouse for executive reporting",
+      "status": "active",
+      "decided_at": "2001-04-07T01:36:51",
+      "domain": "Analytics",
+      "confidence": 0.81,
+      "person_id": "PER-ALEX",
+      "source_id": "SRC-GEN-020",
+      "relies_on": [
+        "ASM-GEN-020"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-021",
+      "title": "ArgoCD GitOps Deployment (Phase 1)",
+      "rationale": "Declarative Kubernetes state synced from git repo",
+      "status": "active",
+      "decided_at": "1995-10-05T12:33:13",
+      "domain": "Infrastructure",
+      "confidence": 0.87,
+      "person_id": "PER-DEVON",
+      "source_id": "SRC-GEN-021",
+      "relies_on": [
+        "ASM-GEN-021"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-022",
+      "title": "Single Sign-On with Okta OIDC (Phase 2)",
+      "rationale": "Centralize corporate identity and MFA policies",
+      "status": "active",
+      "decided_at": "1989-12-13T23:39:12",
+      "domain": "Security",
+      "confidence": 0.89,
+      "person_id": "PER-MARCUS",
+      "source_id": "SRC-GEN-022",
+      "relies_on": [
+        "ASM-GEN-022"
+      ],
+      "depends_on": [
+        "DEC-EU-BILLING"
+      ]
+    },
+    {
+      "id": "DEC-GEN-023",
+      "title": "ClickHouse for Product Analytics (Phase 2)",
+      "rationale": "Columnar store for real-time telemetry aggregation",
+      "status": "active",
+      "decided_at": "2012-02-03T09:24:13",
+      "domain": "Analytics",
+      "confidence": 0.9,
+      "person_id": "PER-HANNAH",
+      "source_id": "SRC-GEN-023",
+      "relies_on": [
+        "ASM-GEN-023"
+      ],
+      "depends_on": [
+        "DEC-GEN-016"
+      ]
+    },
+    {
+      "id": "DEC-GEN-024",
+      "title": "Flyway for Database Migrations (Phase 1)",
+      "rationale": "Deterministic schema migration applied at pod startup",
+      "status": "active",
+      "decided_at": "1983-02-01T08:36:38",
+      "domain": "Database",
+      "confidence": 0.83,
+      "person_id": "PER-TARIQ",
+      "source_id": "SRC-GEN-024",
+      "relies_on": [
+        "ASM-GEN-024"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-025",
+      "title": "ArgoCD GitOps Deployment (Phase 1)",
+      "rationale": "Declarative Kubernetes state synced from git repo",
+      "status": "active",
+      "decided_at": "1973-02-12T23:18:36",
+      "domain": "Infrastructure",
+      "confidence": 0.76,
+      "person_id": "PER-HANNAH",
+      "source_id": "SRC-GEN-025",
+      "relies_on": [
+        "ASM-GEN-025"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-026",
+      "title": "Adopt gRPC for Internal Services (Phase 1)",
+      "rationale": "Binary serialization reduces microservice RPC latency",
+      "status": "active",
+      "decided_at": "2022-08-10T17:13:41",
+      "domain": "API",
+      "confidence": 0.86,
+      "person_id": "PER-SARAH",
+      "source_id": "SRC-GEN-026",
+      "relies_on": [
+        "ASM-GEN-026"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-027",
+      "title": "GitHub Actions CI Standardization (Phase 1)",
+      "rationale": "Migrate all legacy Jenkins pipelines to GHA reusable workflows",
+      "status": "active",
+      "decided_at": "1985-11-04T01:10:20",
+      "domain": "Infrastructure",
+      "confidence": 0.94,
+      "person_id": "PER-MARCUS",
+      "source_id": "SRC-GEN-027",
+      "relies_on": [
+        "ASM-GEN-027"
+      ],
+      "depends_on": [
+        "DEC-GEN-024"
+      ]
+    },
+    {
+      "id": "DEC-GEN-028",
+      "title": "ClickHouse for Product Analytics (Phase 2)",
+      "rationale": "Columnar store for real-time telemetry aggregation",
+      "status": "active",
+      "decided_at": "1988-12-01T01:42:52",
+      "domain": "Analytics",
+      "confidence": 0.95,
+      "person_id": "PER-PRIYA",
+      "source_id": "SRC-GEN-028",
+      "relies_on": [
+        "ASM-GEN-028"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-029",
+      "title": "Kubernetes EKS Migration (Phase 1)",
+      "rationale": "Container orchestration to standardize deployments",
+      "status": "active",
+      "decided_at": "2026-10-05T22:15:11",
+      "domain": "Infrastructure",
+      "confidence": 0.87,
+      "person_id": "PER-PRIYA",
+      "source_id": "SRC-GEN-029",
+      "relies_on": [
+        "ASM-GEN-029"
+      ],
+      "depends_on": [
+        "DEC-MICRO-SUBSCRIPTION"
+      ]
+    },
+    {
+      "id": "DEC-GEN-030",
+      "title": "Single Sign-On with Okta OIDC (Phase 1)",
+      "rationale": "Centralize corporate identity and MFA policies",
+      "status": "active",
+      "decided_at": "1995-03-11T21:32:52",
+      "domain": "Security",
+      "confidence": 0.95,
+      "person_id": "PER-NINA",
+      "source_id": "SRC-GEN-030",
+      "relies_on": [
+        "ASM-GEN-030"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-031",
+      "title": "GitHub Actions CI Standardization (Phase 1)",
+      "rationale": "Migrate all legacy Jenkins pipelines to GHA reusable workflows",
+      "status": "active",
+      "decided_at": "2015-08-10T07:03:46",
+      "domain": "Infrastructure",
+      "confidence": 0.95,
+      "person_id": "PER-PRIYA",
+      "source_id": "SRC-GEN-031",
+      "relies_on": [
+        "ASM-GEN-031"
+      ],
+      "depends_on": [
+        "DEC-POSTGRES-CACHE"
+      ]
+    },
+    {
+      "id": "DEC-GEN-032",
+      "title": "Tailscale Mesh VPN for Staging (Phase 2)",
+      "rationale": "Zero-trust network access replacing OpenVPN",
+      "status": "active",
+      "decided_at": "2016-07-07T16:03:56",
+      "domain": "Security",
+      "confidence": 0.79,
+      "person_id": "PER-NINA",
+      "source_id": "SRC-GEN-032",
+      "relies_on": [
+        "ASM-GEN-032"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-033",
+      "title": "Kafka for Event Bus (Phase 2)",
+      "rationale": "High throughput event stream for async services",
+      "status": "active",
+      "decided_at": "2011-06-15T00:47:53",
+      "domain": "Infrastructure",
+      "confidence": 0.97,
+      "person_id": "PER-DAVID",
+      "source_id": "SRC-GEN-033",
+      "relies_on": [
+        "ASM-GEN-033"
+      ],
+      "depends_on": [
+        "DEC-GEN-023"
+      ]
+    },
+    {
+      "id": "DEC-GEN-034",
+      "title": "GitHub Actions CI Standardization (Phase 1)",
+      "rationale": "Migrate all legacy Jenkins pipelines to GHA reusable workflows",
+      "status": "active",
+      "decided_at": "2006-05-08T02:50:43",
+      "domain": "Infrastructure",
+      "confidence": 0.87,
+      "person_id": "PER-SOPHIA",
+      "source_id": "SRC-GEN-034",
+      "relies_on": [
+        "ASM-GEN-034"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-035",
+      "title": "Adopt Rust for Image Processing Worker (Phase 3)",
+      "rationale": "Eliminate garbage collection pauses during media transcode",
+      "status": "active",
+      "decided_at": "1981-02-13T09:23:03",
+      "domain": "Architecture",
+      "confidence": 0.97,
+      "person_id": "PER-SARAH",
+      "source_id": "SRC-GEN-035",
+      "relies_on": [
+        "ASM-GEN-035"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-036",
+      "title": "Adopt gRPC for Internal Services (Phase 1)",
+      "rationale": "Binary serialization reduces microservice RPC latency",
+      "status": "active",
+      "decided_at": "1988-05-15T14:08:57",
+      "domain": "API",
+      "confidence": 0.97,
+      "person_id": "PER-ELENA",
+      "source_id": "SRC-GEN-036",
+      "relies_on": [
+        "ASM-GEN-036"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-037",
+      "title": "ArgoCD GitOps Deployment (Phase 1)",
+      "rationale": "Declarative Kubernetes state synced from git repo",
+      "status": "active",
+      "decided_at": "2007-11-26T01:27:56",
+      "domain": "Infrastructure",
+      "confidence": 0.88,
+      "person_id": "PER-MAYA",
+      "source_id": "SRC-GEN-037",
+      "relies_on": [
+        "ASM-GEN-037"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-038",
+      "title": "mTLS Between Microservices (Phase 3)",
+      "rationale": "Mutual TLS enforced by Linkerd service mesh",
+      "status": "active",
+      "decided_at": "1992-01-26T02:11:11",
+      "domain": "Security",
+      "confidence": 0.81,
+      "person_id": "PER-OMAR",
+      "source_id": "SRC-GEN-038",
+      "relies_on": [
+        "ASM-GEN-038"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-039",
+      "title": "Single Sign-On with Okta OIDC (Phase 1)",
+      "rationale": "Centralize corporate identity and MFA policies",
+      "status": "active",
+      "decided_at": "1973-10-22T08:17:10",
+      "domain": "Security",
+      "confidence": 0.98,
+      "person_id": "PER-CHLOE",
+      "source_id": "SRC-GEN-039",
+      "relies_on": [
+        "ASM-GEN-039"
+      ],
+      "depends_on": [
+        "DEC-STRIPE-PRIMARY"
+      ]
+    },
+    {
+      "id": "DEC-GEN-040",
+      "title": "OpenTelemetry Tracing (Phase 1)",
+      "rationale": "Distributed trace collection across all HTTP & gRPC gateways",
+      "status": "active",
+      "decided_at": "1972-03-08T20:32:17",
+      "domain": "Architecture",
+      "confidence": 0.95,
+      "person_id": "PER-DEVON",
+      "source_id": "SRC-GEN-040",
+      "relies_on": [
+        "ASM-GEN-040"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-041",
+      "title": "S3 Intelligent Tiering for Logs (Phase 3)",
+      "rationale": "Auto-transition raw logs older than 30 days to Glacier",
+      "status": "active",
+      "decided_at": "1997-04-20T00:07:09",
+      "domain": "Cost",
+      "confidence": 0.89,
+      "person_id": "PER-ZOE",
+      "source_id": "SRC-GEN-041",
+      "relies_on": [
+        "ASM-GEN-041"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-042",
+      "title": "mTLS Between Microservices (Phase 3)",
+      "rationale": "Mutual TLS enforced by Linkerd service mesh",
+      "status": "superseded",
+      "decided_at": "1984-05-11T00:09:58",
+      "domain": "Security",
+      "confidence": 0.95,
+      "person_id": "PER-ALEX",
+      "source_id": "SRC-GEN-042",
+      "relies_on": [
+        "ASM-GEN-042"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-043",
+      "title": "React with Vite & Tailwind (Phase 2)",
+      "rationale": "Standardize developer frontend tooling and fast HMR",
+      "status": "active",
+      "decided_at": "1991-06-01T08:40:11",
+      "domain": "Frontend",
+      "confidence": 0.8,
+      "person_id": "PER-PRIYA",
+      "source_id": "SRC-GEN-043",
+      "relies_on": [
+        "ASM-GEN-043"
+      ],
+      "depends_on": [
+        "DEC-GEN-003"
+      ]
+    },
+    {
+      "id": "DEC-GEN-044",
+      "title": "Adopt Rust for Image Processing Worker (Phase 2)",
+      "rationale": "Eliminate garbage collection pauses during media transcode",
+      "status": "active",
+      "decided_at": "2003-12-22T11:02:48",
+      "domain": "Architecture",
+      "confidence": 0.96,
+      "person_id": "PER-LIAM",
+      "source_id": "SRC-GEN-044",
+      "relies_on": [
+        "ASM-GEN-044"
+      ],
+      "depends_on": [
+        "DEC-GEN-026"
+      ]
+    },
+    {
+      "id": "DEC-GEN-045",
+      "title": "Kubernetes EKS Migration (Phase 1)",
+      "rationale": "Container orchestration to standardize deployments",
+      "status": "active",
+      "decided_at": "2001-03-23T19:47:32",
+      "domain": "Infrastructure",
+      "confidence": 0.78,
+      "person_id": "PER-DEVON",
+      "source_id": "SRC-GEN-045",
+      "relies_on": [
+        "ASM-GEN-045"
+      ],
+      "depends_on": [
+        "DEC-NOTIF-CACHE"
+      ]
+    },
+    {
+      "id": "DEC-GEN-046",
+      "title": "React with Vite & Tailwind (Phase 2)",
+      "rationale": "Standardize developer frontend tooling and fast HMR",
+      "status": "active",
+      "decided_at": "1979-07-03T12:43:58",
+      "domain": "Frontend",
+      "confidence": 0.78,
+      "person_id": "PER-ELENA",
+      "source_id": "SRC-GEN-046",
+      "relies_on": [
+        "ASM-GEN-046"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-047",
+      "title": "Single Sign-On with Okta OIDC (Phase 3)",
+      "rationale": "Centralize corporate identity and MFA policies",
+      "status": "superseded",
+      "decided_at": "2008-03-14T21:08:13",
+      "domain": "Security",
+      "confidence": 0.78,
+      "person_id": "PER-HANNAH",
+      "source_id": "SRC-GEN-047",
+      "relies_on": [
+        "ASM-GEN-047"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-048",
+      "title": "GraphQL Gateway for Mobile Clients (Phase 2)",
+      "rationale": "Minimize over-fetching on high latency mobile networks",
+      "status": "active",
+      "decided_at": "2020-11-01T03:05:39",
+      "domain": "Frontend",
+      "confidence": 0.81,
+      "person_id": "PER-ZOE",
+      "source_id": "SRC-GEN-048",
+      "relies_on": [
+        "ASM-GEN-048"
+      ],
+      "depends_on": [
+        "DEC-NOTIF-CACHE"
+      ]
+    },
+    {
+      "id": "DEC-GEN-049",
+      "title": "OpenTelemetry Tracing (Phase 3)",
+      "rationale": "Distributed trace collection across all HTTP & gRPC gateways",
+      "status": "active",
+      "decided_at": "2009-09-16T18:56:56",
+      "domain": "Architecture",
+      "confidence": 0.96,
+      "person_id": "PER-ZOE",
+      "source_id": "SRC-GEN-049",
+      "relies_on": [
+        "ASM-GEN-049"
+      ],
+      "depends_on": [
+        "DEC-GEN-020"
+      ]
+    },
+    {
+      "id": "DEC-GEN-050",
+      "title": "S3 Intelligent Tiering for Logs (Phase 1)",
+      "rationale": "Auto-transition raw logs older than 30 days to Glacier",
+      "status": "active",
+      "decided_at": "1984-12-04T05:55:40",
+      "domain": "Cost",
+      "confidence": 0.96,
+      "person_id": "PER-ELENA",
+      "source_id": "SRC-GEN-050",
+      "relies_on": [
+        "ASM-GEN-050"
+      ],
+      "depends_on": [
+        "DEC-GEN-020"
+      ]
+    },
+    {
+      "id": "DEC-GEN-051",
+      "title": "Prometheus Alertmanager PagerDuty (Phase 2)",
+      "rationale": "Route critical tier-1 outages directly to on-call phone",
+      "status": "active",
+      "decided_at": "2003-08-02T09:39:59",
+      "domain": "Infrastructure",
+      "confidence": 0.95,
+      "person_id": "PER-MAYA",
+      "source_id": "SRC-GEN-051",
+      "relies_on": [
+        "ASM-GEN-051"
+      ],
+      "depends_on": [
+        "DEC-MICRO-SUBSCRIPTION"
+      ]
+    },
+    {
+      "id": "DEC-GEN-052",
+      "title": "S3 Intelligent Tiering for Logs (Phase 2)",
+      "rationale": "Auto-transition raw logs older than 30 days to Glacier",
+      "status": "active",
+      "decided_at": "1973-03-17T02:00:42",
+      "domain": "Cost",
+      "confidence": 0.95,
+      "person_id": "PER-LIAM",
+      "source_id": "SRC-GEN-052",
+      "relies_on": [
+        "ASM-GEN-052"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-053",
+      "title": "S3 Intelligent Tiering for Logs (Phase 2)",
+      "rationale": "Auto-transition raw logs older than 30 days to Glacier",
+      "status": "active",
+      "decided_at": "2012-09-12T06:08:34",
+      "domain": "Cost",
+      "confidence": 0.97,
+      "person_id": "PER-ALEX",
+      "source_id": "SRC-GEN-053",
+      "relies_on": [
+        "ASM-GEN-053"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "DEC-GEN-054",
+      "title": "React with Vite & Tailwind (Phase 3)",
+      "rationale": "Standardize developer frontend tooling and fast HMR",
+      "status": "active",
+      "decided_at": "2016-04-22T10:51:22",
+      "domain": "Frontend",
+      "confidence": 0.76,
+      "person_id": "PER-ZOE",
+      "source_id": "SRC-GEN-054",
+      "relies_on": [
+        "ASM-GEN-054"
+      ],
+      "depends_on": []
+    }
+  ],
+  "tickets": [],
+  "events": []
+}
